@@ -22,8 +22,8 @@ public class Main {
 
         ArrayList<Row> rows = ApachePOIExcelRead.readSells("D:/MyFirstExcel.xlsx");
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+       WebDriver driver = getDriver();
+//        WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com.ua");
 
 //        PageFactory.initElements(getDriver(), PO.class).waitSpinnerGone();

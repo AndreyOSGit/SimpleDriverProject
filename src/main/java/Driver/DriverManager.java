@@ -12,10 +12,10 @@ public class DriverManager {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
-
+        WebDriverManager.chromedriver().setup();
         if (driver == null) {
 
-            WebDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
 
         }
 
