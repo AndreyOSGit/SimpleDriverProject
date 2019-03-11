@@ -1,10 +1,7 @@
 package Driver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import static io.github.bonigarcia.wdm.DriverManagerType.CHROME;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class DriverManager {
 
@@ -12,10 +9,10 @@ public class DriverManager {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
-        WebDriverManager.chromedriver().setup();
+
         if (driver == null) {
 
-            driver = new ChromeDriver();
+            driver = new SafariDriver();
 
         }
 
